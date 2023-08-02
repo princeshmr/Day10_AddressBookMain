@@ -8,7 +8,7 @@ public class AddressBookMain {
 		System.out.println("Welcome to AddressBookMain class");
 		
 		AddressBook addressBook=new AddressBook();
-		addressBook.addContacts();   //add contact only for 1 person contact
+		addressBook.addContacts();   //add contact only for one person contact
 		addressBook.displayContact(); //to display contact details
 	}
 
