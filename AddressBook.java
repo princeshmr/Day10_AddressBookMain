@@ -73,4 +73,22 @@ Scanner scan=new Scanner(System.in);
 			System.out.println("Not Avilable");
 		}
 	}
+	
+	public void deleteContact() {
+		System.out.println("Enter the first name of delete");
+		String fName=scan.next();
+		boolean isAvilable=false;
+		
+		for(Contact contact : contactArrayList) {
+			if(contact.getFirstName().equalsIgnoreCase(fName)) {
+				isAvilable=true;
+				contactArrayList.remove(contact);
+				System.out.println("Deleted");
+				break;
+			}
+		}
+		if(isAvilable == false) {
+			System.out.println("Not Avilable");
+		}
+	}
 }
