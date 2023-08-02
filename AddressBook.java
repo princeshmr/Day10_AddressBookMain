@@ -32,4 +32,11 @@ Scanner scan=new Scanner(System.in);
 	    
 	    contactArrayList.add(contact);
 	}
+	
+	public void displayContact() {
+		for(int i=0; i<contactArrayList.size(); i++) {
+			Contact contact=contactArrayList.get(i);
+			System.out.println(contact.toString());
+		}
+	}
 }

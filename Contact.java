@@ -36,4 +36,21 @@ public class Contact {
 		this.email = email;
 	}
 	
+
+
+    public String toString() {
+	       return "Contact{"+
+                    "FirstName : "+firstName +'\''+
+                    " LastName : "+lastName +'\''+
+                    " Address : "+address +'\''+
+                    " City : "+city +'\''+
+                    " State : "+state +'\''+
+                    " zip : "+zip+
+                    " Mobile Number : "+phoneNumber+
+                    " Email :"+email+'\'' +
+			  "}";
+	 
+}
+
+	
 }
